@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+      "target": "ES2021",                          // Use modern JS features
+      "module": "CommonJS",                        // Node.js-compatible module system
+      "outDir": "./dist",                          // Output directory for compiled JS
+      "rootDir": "./src",                          // Your source code directory
+      "strict": true,                              // Enables all strict type-checking options
+      "esModuleInterop": true,                     // Allow default imports from CommonJS modules
+      "forceConsistentCasingInFileNames": true,    // Prevent inconsistent file casing
+      "skipLibCheck": true,                        // Speed up build by skipping type checks on libs
+      "resolveJsonModule": true,                   // Allow importing JSON files
+      "typeRoots": ["./node_modules/@types", "./src/types"], // Custom and built-in types
+      "experimentalDecorators": true,              // For possible decorator usage (future extensibility)
+      "emitDecoratorMetadata": true,               // Required by some ORMs or DI frameworks
+      "noImplicitAny": true,                       // Prevents implicit `any` types
+      "moduleResolution": "node"                   // Resolve modules using Node strategy
+    },
+    "include": ["src"],
+    "exclude": ["node_modules", "dist"]
+  }

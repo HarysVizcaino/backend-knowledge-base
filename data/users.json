@@ -1,0 +1,30 @@
+[
+  {
+    "id": "1",
+    "name": "Admin User",
+    "email": "admin@example.com",
+    "role": "Admin",
+    "password": "$2b$10$2QoMbPj0qUvT6rf.QzZ6QeOPCmDXyXXFALHt30KxHbzUu4LGv0VZ6"
+  },
+  {
+    "id": "2",
+    "name": "Editor User",
+    "email": "editor@example.com",
+    "role": "Editor",
+    "password": "$2b$10$OHaoIhSyvhRvmxyPBXOm0ekEtxG8z6SMPtHJgMqtHX9/3sVPWq5hy"
+  },
+  {
+    "id": "3",
+    "name": "Viewer User",
+    "email": "viewer@example.com",
+    "role": "Viewer",
+    "password": "$2b$10$hA7OS8EhwB2fKz4tk4NGKuoYpeZ7sFZ4Mqt5MEnZbRVPC7svuRMsO"
+  },
+  {
+    "id": "52222d6e-12a5-4cbc-b329-07c025e4d94a",
+    "name": "New User",
+    "email": "newuser@example.com",
+    "role": "Viewer",
+    "password": "$2b$10$0rSOjMvsfzBv1IM0HRqZgu9HCCmGkuljfwMnKrfIwxkWP/bwZ/h7O"
+  }
+]
