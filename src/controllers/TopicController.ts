@@ -94,8 +94,6 @@ async getTopicVersions(req: Request, res: Response, next: Function){
   async findShortestPath(req: Request, res: Response, next: Function){
     try {
       const { from, to } = req.query;
-      console.log('from:', from);
-      console.log('to:', to);
       if (typeof from !== 'string' || typeof to !== 'string') {
         return res.status(400).json({ error: 'Both "from" and "to" query params are required.' });
       }

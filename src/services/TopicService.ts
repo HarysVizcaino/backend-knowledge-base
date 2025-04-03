@@ -75,9 +75,6 @@ export class TopicService {
     const topics = await this.topicRepository.getAll();
     const idMap = this.buildIdMap(topics);
     const graph = this.buildGraph(topics);
-    console.log('Topics loaded:', topics.length);
-    console.log('fromId:', fromId);
-    console.log('toId:', toId);
     return this.performBFS(fromId, toId, idMap, graph);
   }
 

@@ -12,7 +12,6 @@ const topicController = new TopicController(topicService);
 
 // Routes
 router.get('/path', (req, res, next) => {
-    console.log('Finding shortest path');
     topicController.findShortestPath(req, res,  next);
 });
 

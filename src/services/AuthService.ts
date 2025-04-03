@@ -27,8 +27,6 @@ export class AuthService {
   async login(email: string, password: string): Promise<string> {
     const user = await this.userRepository.findByEmail(email);
     if (!user) throw new Error('Invalid email or password');
-    console.log(user);
-    console.log(password);
     const isValid = await bcrypt.compare(password, user.password);
     if (!isValid) throw new Error('Invalid email or password');
 
